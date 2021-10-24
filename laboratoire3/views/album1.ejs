@@ -1,0 +1,39 @@
+
+	<!DOCTYPE html >
+	<html>
+		<head>
+			<title> Labo jQuery Album photos </title>
+			<link rel="stylesheet" href="/public/album.css" />
+			
+		
+			<meta charset="utf-8" />
+		</head>
+		<body>
+			<%-include('./partials/menu')%>
+
+			<div id="warpper">
+			
+				<section id="MainImage">
+						<img src="/public/image/Tulips.jpg" id="im1"/>
+					</section>
+					
+					<section id="SideImage">
+						<img src="/public/image/Koala.jpg"  id="im2" class="choix"/>
+						<img src="/public/image/Lighthouse.jpg"  id="im3"class="choix"/>
+						<img src="/public/image/Penguins.jpg"  id="im4" class="choix"/>
+					</section>
+				   
+				   <button id= "bouton"> Diaporama </button>
+	
+					
+			
+			</div>
+		
+			   
+		 <script src="/public/jquery-3.1.1.min.js"></script>  
+		<script src="/public/album.js"></script>
+			
+		</body>
+	</html>
+	
+	

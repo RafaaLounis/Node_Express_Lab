@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"   href="../../public/css/chocolat.css">
+    <script src="../../public/js/chocolat.js"></script>
+
+
+    <title>Document</title>
+</head>
+<body>
+    <%-include('./partials/menu')%>  <%-include('./partials/footer')%>
+
+    <h2 id="lesBarres">les Barres</h2>
+    <ul>
+        <% for (c of choco)
+        {%>
+            <li><%= c.brand %></li>
+
+        <% } %>
+    </ul>
+
+    <h2 id="compagnies">La liste des compagnies</h2>
+    <ul>
+        <% for (c of choco)
+        {%>
+            <li><%= c.compagnie %></li>
+
+        <% } %>
+    </ul>
+
+</body>
+</html>
